@@ -1,0 +1,9 @@
+/* Using tag name */
+h1 {
+  color: aqua;
+}
+
+/* using id */
+#heading {
+  color: blue;
+}
