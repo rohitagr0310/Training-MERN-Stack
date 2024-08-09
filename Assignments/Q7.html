@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table with Rowspan, Colspan, and Background</title>
+    <style>
+      table {
+        background-image: url("background.jpg");
+        background-size: cover;
+        width: 50%;
+        border-collapse: collapse;
+      }
+      table,
+      th,
+      td {
+        border: 1px solid black;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Sample Table</h1>
+    <table>
+      <tr>
+        <th rowspan="2">Name</th>
+        <th colspan="2">Contact Information</th>
+      </tr>
+      <tr>
+        <th>Email</th>
+        <th>Phone</th>
+      </tr>
+      <tr>
+        <td>John Doe</td>
+        <td>john@example.com</td>
+        <td>123-456-7890</td>
+      </tr>
+      <tr>
+        <td>Jane Smith</td>
+        <td>jane@example.com</td>
+        <td>987-654-3210</td>
+      </tr>
+    </table>
+  </body>
+</html>
