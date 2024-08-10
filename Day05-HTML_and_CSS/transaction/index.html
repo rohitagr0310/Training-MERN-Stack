@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Box</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 700px;
+      }
+
+      div {
+        width: 150px;
+        height: 150px;
+        background-color: blueviolet;
+        transition: all 600ms ease-in-out;
+      }
+
+      div:hover {
+        transform: rotate(360deg);
+      }
+
+      img {
+        transition: all 200ms ease-in-out;
+        /* filter:blur(2px) */
+        filter: grayscale(0);
+        width: 150px;
+      }
+
+      img:hover {
+        transform: rotate(180deg) scale(1.2);
+        filter: grayscale(2) blur(2px);
+      }
+    </style>
+  </head>
+
+  <body>
+    <div></div>
+    <br />
+    <img src="./z.jpg" />
+  </body>
+</html>

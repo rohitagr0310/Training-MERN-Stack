@@ -1,0 +1,46 @@
+<!-- psuedo classes -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      ::selection {
+        color: rgb(50, 211, 236);
+        background-color: rgb(169, 49, 250);
+      }
+
+      p::first-line {
+        color: crimson;
+      }
+
+      p::first-letter {
+        color: blue;
+      }
+
+      h1 {
+        color: blue;
+        text-align: center;
+      }
+
+      h1::before {
+        content: "💀";
+      }
+
+      h1::after {
+        content: "💀";
+      }
+    </style>
+  </head>
+
+  <body>
+    <p>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam quas
+      officiis modi laudantium voluptas corporis minus nulla rem quisquam
+      dignissimos quo odio provident, explicabo dolorem sed veniam consequuntur
+      temporibus nesciunt!
+    </p>
+    <h1>Techno</h1>
+  </body>
+</html>
