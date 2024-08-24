@@ -93,3 +93,4 @@ console.log(myDetails.friend);
 let a = "age";
 console.log(myDetails["firstName"]);
 console.log(myDetails[a]);
+
