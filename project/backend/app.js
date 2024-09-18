@@ -1,18 +1,18 @@
-const express = require("express");
+const express = require('express') ;
+const app = express() ;
+const dbConnect = require('./db')
+const PORT = 3000 ;
+const colors = require('colors')
 
-const app = express();
-const dbconnect = require("./db");
-dbconnect();
+//NOTE fn to connect with the mongodb
+dbConnect() ;
 
-// router
-const userRouter = require("./routes/userRoutes");
+app.use(express.json()) ;
 
-// endpoints
-app.use("/api/user", userRouter);
+app.use('/api',require('./routes/userRoutes'))
 
-const port = 3000;
-const host = "localhost";
 
-app.listen(port, () => {
-  console.log(`Server is running on http://${host}:${port}`);
-});
+//listening on the server
+app.listen(PORT,()=>{
+    console.log(colors.yellow(`App is listening on the port:${PORT}`))
+})
